@@ -44,6 +44,9 @@ len(tuple) # length of tuple
 
 dict = {'one': 1, 2: '2', 'three': 3}
 
+# use []-notation for accessing elements of lists, tuples, and dicts
+# use + to join lists and tuples
+
 for item in dict:
     print(item) # prints the key
 
@@ -106,30 +109,23 @@ class Person:
         self.name = name
         self.age = age
 
-    def birthday(self):
-        self.age += 1
+    def hello(self):
+        return "Hi, I am %s, age %d." % (self.name, self.age)
 
 # Inheritance
 
-class Employee(Person):
+class Student(Person):
 
-    def __init__(self, name, age, staffnum):
+    def __init__(self, name, age, gpa):
         # Python 2.x: super(Employee,self)
         super().__init__(name, age)
-        self.staffnumber = staffnum
+        self.gpa = gpa
 
-    def birthday(self):
-        self.age += 2
-
-    def employeeId(self):
-        return self.name + ", " +  self.staffnumber
+    def hello(self):
+        return super().hello() + (" I am a student with GPA %.1f." % self.gpa)
 
 x = Person("Marge Simpson", 45)
-x.birthday()
-y = Employee("Homer Simpson", 49, "1007")
-y.birthday()
-
-print(x.name, x.age)
-print(y.employeeId(), y.age)
-
+print(x.hello())
+y = Student("Homer Simpson", 49, 44.55)
+print(y.hello())
 
