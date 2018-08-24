@@ -2,14 +2,15 @@
 
 ''' Python is an interpreted high-level general-purpose programming language
 
+History:
  * created by Guido van Rossum and first released in 1991
- * design philosophy emphasizes code readability, notably using significant whitespace
- * provides constructs that enable clear programming on both small and large scales
+ * version 3.0 was released in 2008
  * in July 2018, Van Rossum stepped down as the leader in the language community after 30 years
+
+Features:
+ * design philosophy emphasizes code readability, notably using significant whitespace
  * features a dynamic type system and automatic memory management
  * supports multiple programming paradigms, including object-oriented, imperative, functional and procedural
- * has a large and comprehensive standard library
- * version 3.0 was released in 2008
 '''
 
 # === How To Run ===
