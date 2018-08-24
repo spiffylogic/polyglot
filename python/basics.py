@@ -130,3 +130,13 @@ print(x.hello())
 y = Student("Homer Simpson", 49, 44.55)
 print(y.hello())
 
+# === Data Structures ===
+
+# how to work with maps
+
+# how to work with 2d arrays / matrices
+
+# The following works in both 2 and 3. Use numpy for any real numerical work.
+A = [[0 for i in range(num_cols)] for j in range(num_rows)]
+
+# Note differences with Python v2 vs v3 and shortening danger: https://stackoverflow.com/questions/6667201/how-to-define-a-two-dimensional-array-in-python
