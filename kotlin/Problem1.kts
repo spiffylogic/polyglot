@@ -1,5 +1,5 @@
-# Note: must use ea Java option to enable assertions as follows.
-# kotlinc -J-ea -script Problem1.kts
+// Note: use ea Java option to enable assertions:
+// kotlinc -J-ea -script Problem1.kts
 
 val MAX = 1000
 val ANSWER = 233168

@@ -18,9 +18,34 @@ OS: Any supporting JVM or JavaScript interpreter
 // kotlinc basics.kt -include-runtime -d basics.jar
 // java -jar basics.kt
 
-// HELLO WORLD
-
 fun main(args: Array<String>) {
-  println("Hello, world!")
-}
+	println("Hello, world!")
 
+	// === Command Line Arguments
+	for (arg in args) {
+		println(arg)
+	}
+
+	// === Variables and Constants ===
+	var myVariable = 42
+	myVariable = 50
+	val myConst = 42
+
+	// === Types ===
+	val explicitDouble: Double = 70.0 // double literal required
+	val label = "The width is "
+	val width = 94
+	val widthLabel = label + width
+
+	val apples = 3
+	val oranges = 5
+	val fruitSummary = "I have ${apples + oranges} " +
+										 "pieces of fruit."
+
+	// === Range Operators ===
+	val names = arrayOf("Anna", "Alex", "Brian", "Jack")
+	val count = names.count()
+	for (i in 0 .. count-1) {
+		println("Person ${ i+1 } is called ${ names[i] }")
+	}
+}
